@@ -10,7 +10,266 @@
 
 */
 
+body {
+  margin-inline: auto;
+  padding: 0;
+  max-inline-size: 700px;
+  width: 100%;
+  height: 100%;
+}
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-main);
+  font-variation-settings: "wght" 400;
+}
+
+.header {
+  min-block-size: var(--min-block-size);
+  background-color: #fff;
+  margin-block-start: 100px;
+  margin-block-end: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #000;
+}
+
+h1 {
+  font-family: var(--font-accent);
+  font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  color: #000;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+h2 {
+  font-family: var(--font-accent);
+  color: #000;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+}
+
+.card-section {
+  block-size: 100%;
+  inline-size: 100%;
+  background-color: #fff;
+  display: grid;
+  margin-block-end: 3.2rem;
+  border: 2px solid #000;
+  position: relative;
+}
+
+.card-section img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-grey img {
+  filter: grayscale(70%) contrast(1) brightness(1);
+}
+
+.card-neon img {
+  filter: hue-rotate(360deg) saturate(150%) brightness(1.5) contrast(1);
+}
+
+.card-purple img {
+  filter: brightness(0.7) contrast(1.2) hue-rotate(270deg) saturate(0.8);
+}
+
+.card-green img {
+  filter: invert(100%) hue-rotate(0) saturate(100%) brightness(1) contrast(1);
+}
+
+.card-black img {
+  filter: sepia(60%) grayscale(30%) brightness(1.1) contrast(1.05);
+}
+
+.card-blur img {
+  filter: blur(10px);
+}
+
+.card-red img {
+  filter: hue-rotate(90deg) saturate(1) brightness(0.8) contrast(1) opacity(0.9)
+    blur(2px);
+}
+
+.watermark {
+  font-family: var(--font-accent);
+  position: absolute;
+  top: 58px;
+  right: 25px;
+  font-size: 14px;
+  color: #000;
+  text-shadow: -1px -1px 0 var(--text-stroke), 1px -1px 0 var(--text-stroke),
+    -1px 1px 0 var(--text-stroke), 1px 1px 0 var(--text-stroke);
+  opacity: 50%;
+  mix-blend-mode: hard-light;
+}
+
+@supports (-webkit-text-stroke: var(--text-stroke)) {
+  .watermark {
+    -webkit-text-stroke: var(--text-stroke);
+  }
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 100%;
+  padding-block: 0.4rem;
+  padding-inline: 0.6rem;
+}
+
+.content-list {
+  display: grid;
+  text-align: left;
+}
+
+.content-list-item {
+  padding-inline: 1.5rem;
+  padding-block-start: 1.8rem;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: end;
+  margin-block: 1.4rem;
+  margin-inline-end: 1.5rem;
+}
+
+.card__icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 38px;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.card__like-button {
+  background: none;
+  width: 130px;
+  height: 38px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 3.5rem;
+}
+
+.save {
+  width: 335px;
+  height: 51px;
+  border: 2px solid #000;
+  padding: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.floppy {
+  width: 21px;
+  height: 21px;
+  fill: #000;
+}
+
+.button__text,
+.button-save-text {
+  font-size: 14px;
+  line-height: 90%;
+  font-family: var(--font-accent);
+  text-align: center;
+}
+
+dialog {
+  width: 353px;
+  height: 191px;
+  border: 2px solid #000;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+dialog[open] {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.8);
+}
+
+dialog .floppy {
+  width: 39px;
+  height: 39px;
+  fill: #000;
+  flex-shrink: 0;
+  margin-block-start: 10px;
+}
+
+.dialog-button {
+  background: none;
+  border: 2px solid #000;
+  width: 293px;
+  height: 38px;
+  cursor: pointer;
+}
+
+dialog .button__text {
+  text-transform: uppercase;
+  line-height: 150%;
+  text-align: start;
+}
+
+.floppy-input {
+  display: flex;
+  margin-inline: 1rem;
+  gap: 20px;
+}
+
+@media (width <= 375px) {
+  .watermark {
+    top: 76px;
+    right: 11px;
+  }
+
+  .content-list-item {
+    padding-inline: 1.6rem;
+    padding-block-start: 1.8rem;
+  }
+
+  .save {
+    display: grid;
+    inline-size: 19.2rem;
+    block-size: 5.25rem;
+    justify-items: center;
+    gap: 0.7rem;
+  }
+
+  .floppy {
+    width: 28px;
+    height: 28px;
+  }
+
+  .dialog-button {
+    width: 257px;
+  }
 }
