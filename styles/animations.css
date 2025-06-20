@@ -45,7 +45,6 @@
 .dialog-button:hover::before,
 .save:hover::before {
   transform: translate(0);
-  background-color: #000;
   mix-blend-mode: difference;
   color: #000;
   background-color: #fff;
