@@ -3,7 +3,6 @@
 :root {
   --font-main: "Inter", sans-serif;
   --font-accent: "PressStart2P", sans-serif;
-  --min-block-size: clamp(320px, calc(8.8vw + 295px), 370px);
   --text-stroke: 1px #fff;
   --contour-color: #000;
   --animation-fill-color: red;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -18,24 +19,25 @@
       <h2>закрывающий тег</h2>
     </header>
     <main>
-      <section class="card-section">
+      <article class="card-section">
         <h3>Фритрек и нулевой спринт: Подготовка к работе</h3>
         <img src="./images/image-bus.png" alt="автобус" />
-        <div class="watermark">&lt;/HTML&gt;</div>
-        <ul class="content-list">
-          <li class="content-list-item">
+        <span class="watermark">&lt;/HTML&gt;</span>
+        <div class="content-list">
+          <p class="content-list-item">
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
             знания могут повлиять на ваше будущее.
-          </li>
-          <li class="content-list-item">
+          </p>
+          <p class="content-list-item">
             Место для ваших воспоминаний о начале обучения.
-          </li>
-        </ul>
+          </p>
+        </div>
         <div class="card-btn">
           <button class="card__icon-button is-liked" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -71,31 +73,32 @@
               </defs>
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button btn-focus" type="button">
             <span class="button__text">like</span>
           </button>
         </div>
-      </section>
-      <section class="card-section card-grey">
+      </article>
+      <article class="card-section card-filter__grayscale">
         <h3>1 спринт: Я — чистый лист</h3>
         <img src="./images/image-bus.png" alt="автобус" />
-        <div class="watermark">&lt;/HTML&gt;</div>
-        <ul class="content-list">
-          <li class="content-list-item">
+        <span class="watermark">&lt;/HTML&gt;</span>
+        <div class="content-list">
+          <p class="content-list-item">
             На первых этапах мы работали со страхами и сомнениями, которые часто
             испытывают новички. Один из них — страх перед чистым листом. Это,
             конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
             ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
             будет слишком сложно? что, если я не справлюсь?
-          </li>
-          <li class="content-list-item">
+          </p>
+          <p class="content-list-item">
             Место для ваших воспоминаний о начале первого спринта.
-          </li>
-        </ul>
+          </p>
+        </div>
         <div class="card-btn">
           <button class="card__icon-button is-liked" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -131,29 +134,30 @@
               </defs>
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button btn-focus" type="button">
             <span class="button__text">like</span>
           </button>
         </div>
-      </section>
-      <section class="card-section card-neon">
+      </article>
+      <article class="card-section card-filter__hue">
         <h3>1 спринт: А если не получится?</h3>
         <img src="./images/image-bus.png" alt="автобус" />
-        <div class="watermark">&lt;CSS&gt;</div>
-        <ul class="content-list">
-          <li class="content-list-item">
+        <span class="watermark">&lt;CSS&gt;</span>
+        <div class="content-list">
+          <p class="content-list-item">
             Первый проект — позади! Но это всё ещё самое начало пути. Радость
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
             наоборот, могли вдохновиться успехами и поверить в себя.
-          </li>
-          <li class="content-list-item">
+          </p>
+          <p class="content-list-item">
             Место для ваших воспоминаний об окончании первого спринта.
-          </li>
-        </ul>
+          </p>
+        </div>
         <div class="card-btn">
           <button class="card__icon-button is-liked" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -189,31 +193,32 @@
               </defs>
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button btn-focus" type="button">
             <span class="button__text">like</span>
           </button>
         </div>
-      </section>
-      <section class="card-section card-purple">
+      </article>
+      <article class="card-section card-filter__brightness">
         <h3>2 спринт: Погоня за идеалом</h3>
         <img src="./images/image-bus.png" alt="автобус" />
-        <div class="watermark">&lt;desigions&gt;</div>
-        <ul class="content-list">
-          <li class="content-list-item">
+        <span class="watermark">&lt;desigions&gt;</span>
+        <div class="content-list">
+          <p class="content-list-item">
             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
             понять, как много ещё впереди. Вы могли попытаться погнаться за
             идеалом и понять, что он недостижим. А, может, вы вовсе и не
             подвержены перфекционизму и вместо того, чтобы сделать идеально,
             старались просто сделать.
-          </li>
-          <li class="content-list-item">
+          </p>
+          <p class="content-list-item">
             Место для ваших воспоминаний о начале второго спринта.
-          </li>
-        </ul>
+          </p>
+        </div>
         <div class="card-btn">
           <button class="card__icon-button is-liked" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -249,32 +254,33 @@
               </defs>
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button btn-focus" type="button">
             <span class="button__text">like</span>
           </button>
         </div>
-      </section>
-      <section class="card-section card-green">
+      </article>
+      <article class="card-section card-filter__invert">
         <h3>2 спринт: О тех, кто рядом</h3>
         <img src="./images/image-bus.png" alt="автобус" />
-        <div class="watermark">care</div>
-        <ul class="content-list">
-          <li class="content-list-item">
+        <span class="watermark">care</span>
+        <div class="content-list">
+          <p class="content-list-item">
             Всё это время вы были не одиноки (хотя, возможно, иногда и
             чувствовали, что одни против целого мира). Вас окружали
             одногруппники, команда сопровождения и просто близкие люди, которым
             можно пожаловаться, если очередной макет просто так не поддавался.
             Осваивать что-то новое легче, когда рядом есть единомышленники, не
             правда ли?
-          </li>
-          <li class="content-list-item">
+          </p>
+          <p class="content-list-item">
             Место для ваших воспоминаний об окончании второго спринта.
-          </li>
-        </ul>
+          </p>
+        </div>
         <div class="card-btn">
           <button class="card__icon-button is-liked" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -310,29 +316,30 @@
               </defs>
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button btn-focus" type="button">
             <span class="button__text">like</span>
           </button>
         </div>
-      </section>
-      <section class="card-section card-black">
+      </article>
+      <article class="card-section card-filter__sepia">
         <h3>3 спринт: Обходные стратегии</h3>
         <img src="./images/image-bus.png" alt="автобус" />
-        <div class="watermark">&lt;support&gt;</div>
-        <ul class="content-list">
-          <li class="content-list-item">
+        <span class="watermark">&lt;support&gt;</span>
+        <div class="content-list">
+          <p class="content-list-item">
             На этом курсе вы постоянно решали разные задачи. В какой-то момент
             вам могло показаться, что решения просто иссякли. Значит, пришло
             время посмотреть на задачу под другим углом.
-          </li>
-          <li class="content-list-item">
+          </p>
+          <p class="content-list-item">
             Место для ваших воспоминаний о начале третьего спринта.
-          </li>
-        </ul>
+          </p>
+        </div>
         <div class="card-btn">
           <button class="card__icon-button is-liked" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -368,31 +375,32 @@
               </defs>
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button btn-focus" type="button">
             <span class="button__text">like</span>
           </button>
         </div>
-      </section>
-      <section class="card-section card-blur">
+      </article>
+      <article class="card-section card-filter__blur">
         <h3>3 спринт: Когда опускаются руки</h3>
         <img src="./images/image-bus.png" alt="автобус" />
-        <div class="watermark">&lt;lifes-style: none;&gt;</div>
-        <ul class="content-list">
-          <li class="content-list-item">
+        <span class="watermark">&lt;lifes-style: none;&gt;</span>
+        <div class="content-list">
+          <p class="content-list-item">
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
             порешать, и в теории получше разобраться, и жизнь не забыть пожить.
             В такие моменты очень нужна концентрация. Вспомните, откуда вы её
             черпали.
-          </li>
-          <li class="content-list-item">
+          </p>
+          <p class="content-list-item">
             Место для ваших воспоминаний об окончании третьего спринта.
-          </li>
-        </ul>
+          </p>
+        </div>
         <div class="card-btn">
           <button class="card__icon-button is-liked" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -428,33 +436,34 @@
               </defs>
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button btn-focus" type="button">
             <span class="button__text">like</span>
           </button>
         </div>
-      </section>
-      <section class="card-section card-red">
+      </article>
+      <article class="card-section card-filter__hue__red">
         <h3>«Сейчас я здесь»</h3>
         <img src="./images/image-bus.png" alt="автобус" />
-        <div class="watermark">&lt;experience&gt;</div>
-        <ul class="content-list">
-          <li class="content-list-item">
+        <span class="watermark">&lt;experience&gt;</span>
+        <div class="content-list">
+          <p class="content-list-item">
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
             Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
             окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
             этот мир постоянно меняется. Познать его полностью не получится, но
             это тот случай, когда важен сам процесс познания. Ведь часто путь —
             и есть результат.
-          </li>
-          <li class="content-list-item">
+          </p>
+          <p class="content-list-item">
             Место, чтобы остановиться, подумать и написать, что вы чувствуете в
             этой точке пути.
-          </li>
-        </ul>
+          </p>
+        </div>
         <div class="card-btn">
           <button class="card__icon-button is-liked" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -490,61 +499,40 @@
               </defs>
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="card__like-button btn-focus" type="button">
             <span class="button__text">like</span>
           </button>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <button
-        class="save"
-        id="floppy-dialog"
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-      >
-        <svg class="floppy" aria-hidden="true">
-          <use
-            xlink:href="#svg-7b92qd57c"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          ></use>
-        </svg>
-        <span class="button-save-text">Сохранить на память</span>
-        <svg>
-          <symbol
-            fill="none"
-            viewBox="0 0 21 21"
-            id="svg-7b92qd57c"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="#000"
-              d="M0 0h1.615v1.615H0zM0 1.615h1.615V3.23H0zM0 3.231h1.615v1.615H0zM0 4.846h1.615v1.615H0zM0 6.461h1.615v1.615H0zM0 8.077h1.615v1.615H0zM0 9.692h1.615v1.615H0zM0 11.308h1.615v1.615H0zM0 12.923h1.615v1.615H0zM0 14.539h1.615v1.615H0zM0 16.154h1.615v1.615H0zM0 17.769h1.615v1.615H0zM0 19.385h1.615V21H0zM17.77 0v1.615h-1.616V0zM16.154 0v1.615h-1.615V0zM14.539 0v1.615h-1.615V0zM12.923 0v1.615h-1.615V0zM11.308 0v1.615H9.693V0zM9.692 0v1.615H8.077V0zM8.077 0v1.615H6.462V0zM6.462 0v1.615H4.847V0zM4.846 0v1.615H3.231V0zM3.23 0v1.615H1.617V0zM19.385 1.616V3.23H17.77V1.616zM4.846 3.23v1.616H3.231V3.23zM4.846 1.615V3.23H3.231V1.615zM4.846 4.846v1.615H3.231V4.846zM16.154 3.231v1.615h-1.615V3.231zM16.154 1.615V3.23H14.54V1.615zM16.154 4.846v1.615H14.54V4.846zM12.923 3.23v1.616h-1.615V3.23zM12.923 1.615V3.23h-1.615V1.615zM12.923 4.846v1.615h-1.615V4.846zM16.154 6.462v1.615H14.54V6.462zM14.539 6.462v1.615h-1.615V6.462zM12.924 6.461v1.615h-1.615V6.461zM11.308 6.462v1.615H9.693V6.462zM9.693 6.461v1.615H8.078V6.461zM8.077 6.462v1.615H6.462V6.462zM6.462 6.462v1.615H4.847V6.462zM4.847 6.461v1.615H3.232V6.461zM17.769 11.307v1.615h-1.615v-1.615zM16.154 11.308v1.615h-1.616v-1.615zM14.538 11.308v1.615h-1.615v-1.615zM12.923 11.307v1.615h-1.615v-1.615zM11.307 11.308v1.615H9.692v-1.615zM9.692 11.307v1.615H8.077v-1.615zM8.076 11.308v1.615H6.461v-1.615zM6.461 11.308v1.615H4.846v-1.615zM4.846 11.307v1.615H3.23v-1.615zM17.77 12.923v1.615h-1.616v-1.615zM4.846 12.923v1.615H3.231v-1.615z"
-            />
-            <path
-              fill="#000"
-              d="M17.769 14.538v1.615h-1.615v-1.615zM4.846 14.538v1.615H3.23v-1.615zM17.769 16.154v1.615h-1.615v-1.615zM4.846 16.154v1.615H3.23v-1.615zM4.846 17.769v1.615H3.231v-1.615zM17.77 17.769v1.615h-1.616v-1.615zM19.384 19.385V21H17.77v-1.615zM17.769 19.385V21h-1.615v-1.615zM16.154 19.385V21h-1.615v-1.615zM14.538 19.385V21h-1.615v-1.615zM12.923 19.385V21h-1.615v-1.615zM11.307 19.385V21H9.692v-1.615zM9.692 19.384V21H8.077v-1.615zM8.077 19.385V21H6.462v-1.615zM6.461 19.385V21H4.846v-1.615zM4.846 19.385V21H3.23v-1.615zM3.23 19.385V21H1.617v-1.615zM21 21h-1.615v-1.615H21zM21 19.385h-1.615V17.77H21zM21 17.769h-1.615v-1.615H21zM21 16.154h-1.615v-1.615H21zM21 14.538h-1.615v-1.615H21zM21 12.923h-1.615v-1.615H21zM21 11.307h-1.615V9.692H21z"
-            />
-            <path
-              fill="#000"
-              d="M21 9.693h-1.615V8.078H21zM21 8.077h-1.615V6.462H21zM21 6.462h-1.615V4.847H21zM21 4.846h-1.615V3.231H21z"
-            />
-          </symbol>
-        </svg>
-      </button>
+      </article>
+      <div class="content-save">
+        <button
+          class="save btn-focus"
+          id="floppy-dialog"
+          type="button"
+          onclick="window['dialog-id'].showModal()"
+          aria-controls="dialog-id"
+        >
+          <svg class="floppy" aria-hidden="true">
+            <use
+              href="./svg/floppy.svg#svg-7b92qd57c"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            ></use>
+          </svg>
+          <span class="button-save-text">Сохранить на память</span>
+        </button>
+      </div>
       <dialog id="dialog-id">
         <div class="floppy-input">
           <svg class="floppy" aria-hidden="true" viewBox="0 0 39 39">
             <use
-              xlink:href="#svg-7b92qd57c"
+              href="./svg/floppy.svg#svg-7b92qd57c"
               xmlns:xlink="http://www.w3.org/1999/xlink"
             ></use>
           </svg>
-          <span class="button__text">Вставьте дискету, чтобы продолжить</span>
+          <p class="button__text">Вставьте дискету, чтобы продолжить</p>
         </div>
         <button
-          class="dialog-button"
+          class="dialog-button btn-focus"
           id="btn-ok"
           type="button"
           onclick="window['dialog-id'].close()"
@@ -552,7 +540,7 @@
           <span class="button__text">ок</span>
         </button>
       </dialog>
-    </footer>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

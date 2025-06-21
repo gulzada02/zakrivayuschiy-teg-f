@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-  min-block-size: var(--min-block-size);
+  padding-block: 8rem;
   background-color: #fff;
   margin-block-start: 100px;
   margin-block-end: 100px;
@@ -74,31 +74,31 @@ h2 {
   background-position: center;
 }
 
-.card-grey img {
+.card-filter__grayscale img {
   filter: grayscale(70%) contrast(1) brightness(1);
 }
 
-.card-neon img {
+.card-filter__hue img {
   filter: hue-rotate(360deg) saturate(150%) brightness(1.5) contrast(1);
 }
 
-.card-purple img {
+.card-filter__brightness img {
   filter: brightness(0.7) contrast(1.2) hue-rotate(270deg) saturate(0.8);
 }
 
-.card-green img {
+.card-filter__invert img {
   filter: invert(100%) hue-rotate(0) saturate(100%) brightness(1) contrast(1);
 }
 
-.card-black img {
+.card-filter__sepia img {
   filter: sepia(60%) grayscale(30%) brightness(1.1) contrast(1.05);
 }
 
-.card-blur img {
+.card-filter__blur img {
   filter: blur(10px);
 }
 
-.card-red img {
+.card-filter__hue__red img {
   filter: hue-rotate(90deg) saturate(1) brightness(0.8) contrast(1) opacity(0.9)
     blur(2px);
 }
@@ -110,8 +110,6 @@ h2 {
   right: 25px;
   font-size: 14px;
   color: #000;
-  text-shadow: -1px -1px 0 var(--text-stroke), 1px -1px 0 var(--text-stroke),
-    -1px 1px 0 var(--text-stroke), 1px 1px 0 var(--text-stroke);
   opacity: 50%;
   mix-blend-mode: hard-light;
 }
@@ -167,7 +165,7 @@ h3 {
   cursor: pointer;
 }
 
-.footer {
+.content-save {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,10 +197,10 @@ h3 {
 
 dialog {
   width: 353px;
-  height: 191px;
   border: 2px solid #000;
   text-align: center;
   transition: opacity 0.3s ease;
+  padding-block: 2rem;
 }
 
 dialog[open] {
@@ -214,7 +212,7 @@ dialog[open] {
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 dialog .floppy {
@@ -246,6 +244,10 @@ dialog .button__text {
 }
 
 @media (width <= 375px) {
+  .header {
+    padding-block: 7.5rem;
+  }
+
   .watermark {
     top: 76px;
     right: 11px;
