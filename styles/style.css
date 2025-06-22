@@ -25,7 +25,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: var(--font-main);
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" var(--font-weight);
 }
 
 .header {
@@ -62,7 +62,7 @@ h2 {
   inline-size: 100%;
   background-color: #fff;
   display: grid;
-  margin-block-end: 3.2rem;
+  margin-block-end: 3rem;
   border: 2px solid #000;
   position: relative;
 }
@@ -122,8 +122,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  line-height: 100%;
-  padding-block: 0.4rem;
+  padding-block: 0.3rem;
   padding-inline: 0.6rem;
 }
 
@@ -141,9 +140,10 @@ h3 {
 
 .card-btn {
   display: flex;
-  justify-content: end;
-  margin-block: 1.4rem;
-  margin-inline-end: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-block: 1.6rem;
+  margin-inline-end: 1.6rem;
 }
 
 .card__icon-button {
@@ -174,9 +174,9 @@ h3 {
 
 .save {
   width: 335px;
-  height: 51px;
+  height: 55px;
   border: 2px solid #000;
-  padding: 10px;
+  padding: 12px;
   background: #fff;
   cursor: pointer;
 }
@@ -248,6 +248,10 @@ dialog .button__text {
     padding-block: 7.5rem;
   }
 
+  .card-section {
+    margin-block-end: 3.3rem;
+  }
+
   .watermark {
     top: 76px;
     right: 11px;
@@ -256,6 +260,10 @@ dialog .button__text {
   .content-list-item {
     padding-inline: 1.6rem;
     padding-block-start: 1.8rem;
+  }
+
+  .card-btn {
+    margin-block: 1.4rem;
   }
 
   .save {

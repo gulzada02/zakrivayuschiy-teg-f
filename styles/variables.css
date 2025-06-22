@@ -2,7 +2,8 @@
 
 :root {
   --font-main: "Inter", sans-serif;
-  --font-accent: "PressStart2P", sans-serif;
+  --font-accent: "PressStart2P", fantasy;
+  --font-weight: 400;
   --text-stroke: 1px #fff;
   --contour-color: #000;
   --animation-fill-color: red;

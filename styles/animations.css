@@ -41,6 +41,11 @@
   background-color: #fff;
 }
 
+.btn-focus:hover span {
+  position: relative;
+  color: #fff;
+}
+
 .card__icon-button:focus {
   outline: none;
 }
