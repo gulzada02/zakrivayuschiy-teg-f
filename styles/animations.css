@@ -29,20 +29,20 @@
   transform: translate(-100%);
   transition: 0.5s ease-in-out;
   transform-origin: left;
-  background-color: #000;
-  color: #fff;
   inset: 0;
+  z-index: 1;
+  mix-blend-mode: difference;
+  background-color: #fff;
 }
 
 .btn-focus:hover::before {
   transform: translate(0);
-  mix-blend-mode: difference;
-  color: #000;
-  background-color: #fff;
 }
 
 .btn-focus:hover span {
   position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
   color: #fff;
 }
 
@@ -50,14 +50,18 @@
   outline: none;
 }
 
+.card__icon-button .like-icon {
+  transition: all 0.3s ease;
+}
+
 .card__icon-button:focus-visible .like-icon {
   border: 2px solid #000;
-  transition: 0.3s ease;
 }
 
 .card__icon-button .main-body,
 .card__icon-button .core {
   transition: fill 0.3s ease;
+  transition-delay: 0.3s;
   fill: transparent;
 }
 
@@ -92,6 +96,7 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
+  transition: fill 0.3s ease;
 }
 
 .like-icon.is-liked .contour {

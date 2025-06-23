@@ -124,6 +124,7 @@ h3 {
   font-size: 18px;
   padding-block: 0.3rem;
   padding-inline: 0.6rem;
+  font-weight: 700;
 }
 
 .content-list {
@@ -176,9 +177,12 @@ h3 {
   width: 335px;
   height: 55px;
   border: 2px solid #000;
-  padding: 12px;
   background: #fff;
   cursor: pointer;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
 }
 
 .floppy {
@@ -271,7 +275,7 @@ dialog .button__text {
     inline-size: 19.2rem;
     block-size: 5.25rem;
     justify-items: center;
-    gap: 0.7rem;
+    padding-block: 1rem;
   }
 
   .floppy {
