@@ -159,7 +159,7 @@ h3 {
 }
 
 .card__like-button {
-  background: none;
+  background: #fff;
   width: 130px;
   height: 38px;
   border: 2px solid #000;
@@ -188,7 +188,13 @@ h3 {
 .floppy {
   width: 21px;
   height: 21px;
-  fill: #000;
+}
+
+.btn .floppy {
+  mix-blend-mode: difference;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .button__text,
@@ -197,6 +203,10 @@ h3 {
   line-height: 90%;
   font-family: var(--font-accent);
   text-align: center;
+  color: #fff;
+  mix-blend-mode: difference;
+  z-index: 1;
+  position: relative;
 }
 
 dialog {

@@ -10,18 +10,18 @@
 
 */
 
-.btn-focus:focus {
+.btn:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 #000;
 }
 
-.btn-focus {
+.btn {
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
 
-.btn-focus::before {
+.btn::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -30,20 +30,17 @@
   transition: 0.5s ease-in-out;
   transform-origin: left;
   inset: 0;
-  z-index: 1;
-  mix-blend-mode: difference;
-  background-color: #fff;
+  background-color: #000;
 }
 
-.btn-focus:hover::before {
+.btn:hover::before {
   transform: translate(0);
 }
 
-.btn-focus:hover span {
+.btn:hover span {
   position: relative;
   z-index: 2;
   transition: color 0.3s ease;
-  color: #fff;
 }
 
 .card__icon-button:focus {
