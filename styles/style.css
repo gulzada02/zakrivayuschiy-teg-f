@@ -62,7 +62,7 @@ h2 {
   inline-size: 100%;
   background-color: #fff;
   display: grid;
-  margin-block-end: 3rem;
+  margin-block-end: 3.1rem;
   border: 2px solid #000;
   position: relative;
 }
