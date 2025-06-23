@@ -51,7 +51,7 @@
 }
 
 .card__icon-button .like-icon {
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus-visible .like-icon {
